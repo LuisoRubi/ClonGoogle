@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    font-family: Roboto;
+    background-color: #202124;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: end;
+    height: 60px; 
+    padding: 0 18px;  
+}
+
+header .menu-header{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+header .menu-header a{
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    color: whitesmoke;
+}
+
+header .menu-header a img{
+    height: 24px;
+    width: 24px;    
+}
+
+header .user-pic img{
+   height: 40px;
+   width: 30px;
+   padding: 2px 0;
+   margin-top: 5px;
+   margin-left: 15px;
+   border-radius: 50%;
+}
+
+main{
+    height: calc(100% - 60px - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    gap: 32px;
+}
+
+main .container figure{
+    height: 92px;
+}
+
+main .container figure img{
+    height: 92px;
+    width: 272px;
+}
+
+main .container .searcher{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: 50px;
+    width: 600px;
+    padding: 8px 12px;
+    border: 1px solid gray;
+    border-radius: 24px;
+}
+
+@media (hover: hover){
+    main .container .searcher:hover{
+        background-color: #383838;
+        border: none;
+    }
+}
+/* Agrego este media query para que el diseño sea responsive, este media query identifica si hay cursor en el dispositivo */
+
+
+main .container .searcher input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+main .container .searcher button{
+    background-color: transparent;
+    border: none;
+}
+
+main .container .searcher-buttons{
+    display: flex;
+    gap: 12px;
+}
+
+main .container .searcher-buttons button{
+    border: none;
+    border-radius: 4px;
+    background-color: #303134;
+    padding: 12px;
+    color: whitesmoke;
+}
+
+.search-icon{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25px;
+    width: 25px;
+    background-image: url(assets/search-icon.svg);
+}
+
+.mic-icon{
+    display: inline-block;
+    background-position: center;
+    height: 25px;
+    width: 25px;
+    background-image: url(assets/mic-icon.svg);
+}
+
+
+.cam-icon{
+    display: inline-block;
+    background-position: center;
+    height: 25px;
+    width: 25px;
+    background-image: url(assets/cam-icon.svg);
+}
+
+footer{
+    height: 100px;
+    background-color: #171717;
+}
+
+footer section{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer section span{
+    padding: 0 25px;
+}
+
+footer section.info{
+    border-top: #4e4e4e solid 1px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section.info div{
+    display: flex;
+    gap: 18px;
+}
+
+footer section.info div a{
+    text-decoration: none;
+    color: whitesmoke;
+}
