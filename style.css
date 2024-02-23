@@ -68,7 +68,7 @@ main .container figure img{
     width: 272px;
 }
 
-main .container .searcher{
+main .container .input-search{
     display: flex;
     align-items: center;
     gap: 18px;
@@ -80,7 +80,7 @@ main .container .searcher{
 }
 
 @media (hover: hover){
-    main .container .searcher:hover{
+    main .container .input-search:hover{
         background-color: #383838;
         border: none;
     }
@@ -88,7 +88,7 @@ main .container .searcher{
 /* Agrego este media query para que el diseño sea responsive, este media query identifica si hay cursor en el dispositivo */
 
 
-main .container .searcher input{
+main .container .input-search input{
     width: 100%;
     background-color: transparent;
     border: none;
@@ -97,22 +97,31 @@ main .container .searcher input{
     font-size: 16px;
 }
 
-main .container .searcher button{
+main .container .input-search button{
     background-color: transparent;
     border: none;
 }
 
-main .container .searcher-buttons{
+main .container .btn-search{
     display: flex;
     gap: 12px;
+    font-size: 15px;
 }
 
-main .container .searcher-buttons button{
+main .container .btn-search a{
+    text-decoration: none;
+    gap: 15px;
     border: none;
     border-radius: 4px;
     background-color: #303134;
-    padding: 12px;
+    padding: 10px;
     color: whitesmoke;
+}
+
+@media (hover: hover){
+    main .container .btn-search a:hover{
+        border: #747474 solid 1px;
+    }
 }
 
 .search-icon{
